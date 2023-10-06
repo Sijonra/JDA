@@ -1,210 +1,222 @@
 .help-service {
-	max-width: 1272px;
-	margin: 0 auto;
-	position: relative;
+  max-width: 1272px;
+  margin: 0 auto;
+  position: relative;
 
-	&__inner {
-		position: relative;
-	}
+  &__inner {
+    position: relative;
+    @media (max-width: 1352px) {
+      max-width: 642px;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
 
-	&__bg {
-		margin-top: -115px;
-		margin-left: -700px;
+  &__bg {
+    margin-top: -115px;
+    margin-left: -700px;
 
-		@media (max-width: 1024px) {
-			margin-left: -1100px;
-		}
+    @media (max-width: 1352px) {
+      margin-left: -1100px;
+    }
 
-		@media (max-width: 800px) {
-			display: none;
-		}
-	}
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 
-	&__star {
-		position: absolute;
-		width: 48px;
-		top: 70px;
-		left: 15px;
-		z-index: 4;
+  &__star {
+    position: absolute;
+    width: 48px;
+    top: 70px;
+    left: 15px;
+    z-index: 4;
 
-		@media (max-width: 1024px) {
-			left: unset;
-			top: 400px;
-			right: 65px;
-		}
+    @media (max-width: 1352px) {
+      left: unset;
+      top: 400px;
+      right: 65px;
+    }
 
-		// @include device('<=phone') {
-		// 	width: em(20px);
-		// 	top: em(370px);
-		// 	right: em(18px);
-		// }
+    @media (max-width: 768px) {
+      width: 20px;
+      top: 370px;
+      right: 18px;
+    }
 
-		// svg {
-		// 	@include device('<=phone') {
-		// 		width: em(20px);
-		// 	}
-		// }
+    svg {
+      @media (max-width: 768px) {
+        width: 20px;
+      }
+    }
 
-		path {
-			fill: black;
-		}
-	}
+    path {
+      fill: black;
+    }
+  }
 
-	&__phone {
-		position: absolute;
-		z-index: 4;
-		top: -28px;
-		left: 95px;
+  &__phone {
+    position: absolute;
+    z-index: 4;
+    top: -28px;
+    left: 95px;
 
-		@media (max-width: 1024px){
-			top: 343px;
-			left: 130px;
-			width: 438px;
-		}
-		// @include device('<=phone') {
-		// 	top: em(313px);
-		// 	left: em(38px);
-		// 	width: em(220px);
-		// }
-	}
+    @media (max-width: 1352px) {
+      top: 343px;
+      left: 130px;
+      width: 438px;
+    }
+    @media (max-width: 768px) {
+      top: 313px;
+      left: 38px;
+      width: 220px;
+      img {
+        width: 220px;
+        height: 360px;
+      }
+    }
+  }
 
-	&__ellipses {
-		position: absolute;
-		width: 720px;
-		top: 26px;
-		left: -56px;
-		z-index: 3;
+  &__ellipses {
+    position: absolute;
+    width: 720px;
+    top: 26px;
+    left: -56px;
+    z-index: 3;
 
-		@media (max-width: 1024px) {
-			width: 630px;
-			top: 342px;
-			left: 4px;
-		}
+    @media (max-width: 1352px) {
+      width: 630px;
+      top: 342px;
+      left: 4px;
+    }
 
-		// @include device('<=phone') {
-		// 	width: em(320px);
-		// 	top: em(134px);
-		// 	left: em(-25px);
-		// }
+    @media (max-width: 768px) {
+      width: 320px;
+      top: 134px;
+      left: -25px;
+    }
 
-		svg {
-			width: 724px;
-			height: 724px;
+    svg {
+      width: 724px;
+      height: 724px;
 
-			@media (max-width: 1024px) {
-				width: 640px;
-			}
-			// @include device('<=phone') {
-			// 	width: em(320px);
-			// }
-		}
-	}
+      @media (max-width: 1352px) {
+        width: 640px;
+      }
+      @media (max-width: 768px) {
+        width: 320px;
+      }
+    }
+  }
 
-	&__blur {
-		position: absolute;
-		z-index: 2;
-		top: 100px;
-		left: -20px;
+  &__blur {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: -20px;
 
-		@media (max-width: 1024px) {
-			top: 440px;
-			left: 20px;
-		}
-		// @include device('<=phone') {
-		// 	width: em(200px);
-		// 	top: em(200px);
-		// 	left: 0;
-		// }
+    @media (max-width: 1352px) {
+      top: 440px;
+      left: 20px;
+    }
+    @media (max-width: 768px) {
+      width: 200px;
+      top: 200px;
+      left: 0;
+    }
 
-		// svg {
-		// 	@include device('<=phone') {
-		// 		width: em(200px);
-		// 	}
-		// }
-	}
+    svg {
+      @media (max-width: 768px) {
+        width: 200px;
+      }
+    }
+  }
 
-	&__content {
-		padding: 182px 0 150px 800px;
-        
-		@media (max-width: 1024px) {
-			padding: 58px 0 609px 0px;
-		}
-		// @include device('<=phone') {
-		// 	padding: em(53px) 0 em(315px) em(0px);
-		// }
-	}
+  &__content {
+    padding: 182px 0 150px 800px;
 
-	&__title {
-		font-size: 45px;
-		font-weight: 900;
-		line-height: 130%;
-		margin-bottom: 46px;
-		color: #2C2C2C;
+    @media (max-width: 1352px) {
+      margin: 0 auto;
+      padding: 58px 0 609px 0px;
+    }
+    @media (max-width: 768px) {
+      padding: 53px 0 315px 0px;
+    }
+  }
 
-		@media (max-width: 1024px) {
-			font-size: 36px;
-			margin-bottom: 40px;
-		}
-		// @include device('<=phone') {
-		// 	@include font-size(20px);
-		// 	margin-bottom: em(29px);
-		// }
-	}
+  &__title {
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 130%;
+    margin-bottom: 46px;
+    color: #2c2c2c;
 
-	&__item {
-		display: flex;
-		align-items: flex-start;
-		margin-bottom: 43px;
+    @media (max-width: 1352px) {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: 20px;
+      margin-bottom: 29px;
+    }
+  }
 
-		@media (max-width: 1024px) {
-			margin-bottom: 20px;
-		}
-		// @include device('<=phone') {
-		// 	margin-bottom: em(16px);
-		// }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 43px;
 
-		&:nth-child(3){
-			margin-bottom: 50px;
+    @media (max-width: 1352px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+    }
 
-			@media (max-width: 1024px) {
-				margin-top: 23px !important;
-				margin-bottom: em(30px);
-			}
-			// @include device('<=phone') {
-			// 	margin-bottom: em(22px);
-			// }
-		}
+    &:nth-child(3) {
+      //margin-bottom: 50px;
 
+      @media (max-width: 1352px) {
+        margin-top: 23px !important;
+        margin-bottom: em(30px);
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 22px;
+      }
+    }
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
-	&__item-icon {
-		margin-right: 15px;
-		width: 23px;
-		height: 23px;
-		// svg {
-		// 	@include device('<=phone') {
-		// 		width: em(23px);
-		// 	}
-		// }
-	}
+  &__item-icon {
+    margin-right: 15px;
+    width: 23px;
+    height: 23px;
+    svg {
+      @media (max-width: 768px) {
+        width: 23px;
+      }
+    }
+  }
 
-	&__item-text {
-		font-size: 22px;
-		font-weight: 400;
-		line-height: 150%;
-		max-width: 390px;
-		margin-top: -5px;
+  &__item-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 390px;
+    margin-top: -5px;
 
-		@media (max-width: 1024px) {
-			font-size: 20px;
-		}
+    @media (max-width: 1352px) {
+      font-size: 20px;
+    }
 
-		// @include device('<=phone') {
-		// 	@include font-size(16px);
-		// }
-	}
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
 }
