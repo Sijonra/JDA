@@ -1,7 +1,8 @@
 .section-help {
+  padding-top: 76px;
   display: flex;
   padding-top: 76px;
-  height: 1089px;
+  height: 120vh;
   background-color: #232323;
   font-family: "Gotham";
   &::after {
@@ -9,11 +10,18 @@
     position: absolute;
     inset: 0 0 0 0;
     width: 100%;
-    height: 1089px;
+    height: 120%;
     opacity: 0.05;
     background-repeat: repeat;
     background-position: 50%;
     background-image: url("../../../img/noise.png");
+  }
+  @media (max-width: 1352px) {
+    padding-top: 36px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 53px;
+    height: 724px;
   }
 }
 .help-preview {
@@ -25,6 +33,26 @@
     position: relative;
     z-index: 200;
     cursor: pointer;
+  }
+
+  @media (max-width: 1352px) {
+    width: 642px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 268px;
+    margin: 0 auto;
+  }
+
+  &__link svg {
+    @media (max-width: 1352px) {
+      width: 270px;
+      height: 80px;
+    }
+    @media (max-width: 768px) {
+      width: 164px;
+      height: 48px;
+    }
   }
 }
 .help__title {
@@ -39,6 +67,20 @@
       height: 71px;
     }
   }
+  @media (max-width: 1352px) {
+    margin-top: 76px;
+    svg {
+      width: 268px;
+      height: 70px;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 14px;
+    svg {
+      width: 208px;
+      height: 72px;
+    }
+  }
 }
 .help__subtitle {
   color: #fff;
@@ -47,11 +89,21 @@
   max-width: 470px;
   font-size: 36px;
   margin-bottom: 60px;
+
+  @media (max-width: 1352px) {
+    font-size: 24px;
+    margin-bottom: 46px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 18px;
+    max-width: 250px;
+  }
 }
 .help-phones {
   position: absolute;
-  top: 2em;
-  right: -0.3636363636em;
+  top: 50px;
+  right: -10px;
   z-index: 5;
   transition-duration: 0.8s;
   &__circles {
@@ -60,42 +112,171 @@
     position: absolute;
     z-index: -1;
   }
-  &__star {
+  &__blur {
     position: absolute;
+    z-index: -1;
     &--1 {
-      top: 5.5454545455em;
-      left: -28.2727272727em;
+      top: 1.7272727273em;
+      right: 21.9090909091em;
     }
     &--2 {
-      top: 0.5454545455em;
-      left: 45.2727272727em;
+      top: 31.7272727273em;
+      right: 0.9090909091em;
     }
-    &--3 {
-      top: 43.5454545455em;
-      left: 12.2727272727em;
+  }
+  @media (max-width: 1352px) {
+    width: 560px;
+    right: 90px;
+    top: 400px;
+    &__circles {
+      top: -230px;
+      right: -160px;
+      svg {
+        width: 670px;
+        height: 948px;
+      }
     }
-    &--4 {
-      top: 55.5454545455em;
-      left: -24.2727272727em;
+    img {
+      width: 560px;
+      height: 560px;
+    }
+    &__blur {
+      &--1 {
+        svg {
+          width: 320px;
+          height: 412px;
+        }
+
+        top: 50px;
+        right: 300px;
+      }
+      &--2 {
+        svg {
+          width: 390px;
+          height: 444px;
+        }
+
+        top: 280px;
+        right: 0px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    width: 280px;
+    top: 355px;
+    right: 15px;
+    &__circles {
+      top: -120%;
+      right: -28%;
+      svg {
+        width: 344px;
+        height: 948px;
+      }
+    }
+    &__blur {
+      &--1 {
+        svg {
+          width: 200px;
+          height: 400px;
+        }
+        top: -40%;
+        right: 40%;
+      }
+      &--2 {
+        svg {
+          width: 220px;
+          height: 444px;
+        }
+        top: 10%;
+        right: -15%;
+      }
+    }
+    img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+
+  &__star {
+    position: absolute;
+
+    @media (max-width: 1352px) {
+      &--1 {
+        svg {
+          width: 22px;
+          height: 220px;
+        }
+        top: -79%;
+        left: 50%;
+      }
+      &--2 {
+        svg {
+          width: 36px;
+          height: 36px;
+        }
+        top: -40%;
+        left: 100%;
+      }
+      &--3 {
+        svg {
+          width: 55px;
+          height: 55px;
+        }
+        top: 20%;
+        left: 100%;
+      }
+      &--4 {
+        svg {
+          width: 44px;
+          height: 44px;
+        }
+        top: 85%;
+        left: 8%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      &--1 {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        top: -100%;
+        left: 88%;
+      }
+      &--2 {
+        svg {
+          width: 25px;
+          height: 28px;
+        }
+        top: -2%;
+        left: 94%;
+      }
+      &--3 {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+        top: 85%;
+        left: 15%;
+      }
+      &--4 {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        top: 90%;
+        left: 94%;
+      }
     }
   }
 }
 .help-phones__blur {
-  position: absolute;
-  z-index: -1;
-  &--1 {
-    top: 1.7272727273em;
-    right: 21.9090909091em;
-  }
-  &--2 {
-    top: 31.7272727273em;
-    right: 0.9090909091em;
-  }
 }
 
 @media (max-width: 1350px) {
 }
 
-.help-service__title{
+.help-service__title {
   font-size: 100px;
 }
