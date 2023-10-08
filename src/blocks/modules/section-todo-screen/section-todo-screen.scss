@@ -1,0 +1,51 @@
+.dev-case{
+    .todo-screen__circle{
+        &_1{
+            transform: rotate(51deg);
+            top: -28%;
+            left: -45%;
+        }
+        &_2{
+            transform: rotate(100deg);
+            svg{
+                width: 1000px;
+                height: 1000px;
+            }
+            top: -10%;
+            right: -10%;
+        }
+    }
+}
+
+@media (max-width: 1352px){
+    .todo-screen__circle{
+        &_2{
+            right: -50% !important;
+            transform: rotate(25deg)  !important;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .todo-screen .todo-screen__circle{
+        &_1{
+            svg{
+                width: 400px;
+                height: 400px;
+            }
+            transform: rotate(31deg);
+            top: 23%;
+            left: -5%;
+        }
+        &_2{
+            svg{
+                width: 400px;
+                height: 400px;
+            }
+            transform: rotate(100deg);
+            top: -25% !important;
+            right: -16% !important; 
+        }
+    }
+}
+
