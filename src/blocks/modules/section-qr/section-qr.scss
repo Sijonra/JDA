@@ -1,0 +1,59 @@
+.qr{
+    .todo-screen__circle{
+        svg{
+            width: 1000px;
+            height: 1000px;
+        }
+        &_1{
+            top: -50%;
+            left: -55%;
+        }
+        &_2{
+            transform: rotate(74deg);
+            top: 25%;
+            left: 15%;
+        }
+    }
+}
+
+@media (max-width: 1352px){
+    .qr{
+        .todo-screen__circle{
+            svg{
+                width: 600px;
+                height: 600px;
+            }
+            &_1{
+                transform: rotate(45deg);
+                top: -50%;
+                left: -55%;
+            }
+            &_2{
+                transform: rotate(63deg) !important;
+                top: 25%;
+                left: 15%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .qr{
+        .todo-screen__circle{
+            svg{
+                width: 400px;
+                height: 400px;
+            }
+            &_1{
+                transform: rotate(71deg);
+                top: 40%;
+                left: -20%;
+            }
+            &_2{
+                transform: rotate(43deg) !important;
+                top: -30%;
+                left: 15%;
+            }
+        }
+    }
+}
