@@ -1,0 +1,37 @@
+.fund-profiles{
+   .dev-case__circle{
+        svg{
+            width: 2000px;
+            height: 2000px;
+        }
+        top: -35%;
+        left: -26%;
+   } 
+}
+
+@media (max-width: 1352px){
+    .fund-profiles{
+        .dev-case__circle{
+            svg{
+                width: 800px !important;
+                height: 800px !important;
+            }
+            top: -55% !important;
+            left: -10% !important;
+        }
+        
+   } 
+}
+
+@media (max-width: 768px){
+    .fund-profiles{
+        .dev-case__circle{
+            svg{
+                width: 600px !important;
+                height: 600px !important;
+            }
+            top: -55% !important;
+            left: 20% !important;
+        }
+   }
+}
