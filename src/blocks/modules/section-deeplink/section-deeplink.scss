@@ -1,0 +1,63 @@
+.deeplink{
+    .todo-screen__circle{
+        svg{
+            width: 1000px;
+            height: 1000px;
+        }
+        &_1{
+            transform: rotate(46deg);
+            top: 8%;
+            left: -45%;
+        }
+        &_2{
+            transform: rotate(128deg);
+            top: -100%;
+            right: -10%;
+        }
+    }
+}
+
+@media (max-width: 1352px){
+    .deeplink{
+        .todo-screen__circle{
+            svg{
+                width: 1000px;
+                height: 1000px;
+            }
+            &_1{
+                transform: rotate(46deg);
+                top: 8%;
+                left: -45%;
+            }
+            &_2{
+                transform: rotate(128deg);
+                top: -100%;
+                right: -10%;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+    .deeplink{
+        .todo-screen__circle{
+            svg{
+                width: 400px;
+                height: 400px;
+            }
+            &_1{
+                transform: rotate(84deg) !important;
+                top: 8%;
+                left: -45%;
+            }
+            &_2{
+                transform: rotate(305deg) !important;
+                top: -100%;
+                right: -10%;
+            }
+        }
+    }
+
+}
+
