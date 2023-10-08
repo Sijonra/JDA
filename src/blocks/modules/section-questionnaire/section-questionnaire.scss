@@ -1,14 +1,7 @@
 .dev-case{
-    padding-bottom: 97px;
     &-inner{
         max-width: 1272px;
         margin: 0 auto;
-    }
-    &__head-title{
-        font-size: 45px;
-        font-family: Gotham-black;
-        margin-bottom: 37px;
-        text-align: center;
     }
     &-content{
         display: flex;
@@ -80,17 +73,16 @@
 
     }
 }
-
+.questionnaire__circle{
+    top: -40%;
+    right: -40%;
+}
 
 @media (max-width: 1352px){
     .dev-case{
         &-inner{
             max-width: 642px;
             margin: 0 auto;
-        }
-        &__head-title{
-            margin-bottom: 43px;
-            font-size: 42px;
         }
         &__text{
             font-size: 20px;
@@ -123,19 +115,17 @@
             right: -15%;
         }
     }
-
+    .questionnaire__circle{
+        top: -40%;
+        right: -40%;
+    }
 }
 
 @media (max-width: 768px){
     .dev-case{
-        padding-bottom: 60px;
         &-inner{
             max-width: 320px;
             margin: 0 auto;
-        }
-        &__head-title{
-            margin-bottom: 43px;
-            font-size: 22px;
         }
         &__title{
             font-size: 20px;
@@ -180,5 +170,11 @@
             right: -5%;
         }
     }
+    .questionnaire__circle{
+        transform: rotate(-76deg);
+        top: -40%;
+        right: -10%;
+    }
 
 }
+
