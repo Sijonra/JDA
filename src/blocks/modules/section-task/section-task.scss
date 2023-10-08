@@ -1,5 +1,6 @@
 .task{
     &-inner{
+        padding: 78px 0 78px;
         display: flex;
         align-items: center;
         max-width: 1272px;
@@ -103,6 +104,84 @@
         }
         &__text{
             max-width: 560px;
+        }
+        &__star{
+            &_2{
+                position: absolute;
+                top: 70%;
+                left: 5%;
+                svg{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .task{
+        &-inner{
+            max-width: 320px;
+
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &-phone{
+            width: 250px;
+            height: 320px;
+            &__phone{
+                img{
+                    width: 250px;
+                    height: 320px;
+                }
+            }
+            &__blur{
+                svg{
+                    width: 200px;
+                    height: 300px;
+                }
+                
+            }
+            &__screen{
+                &_1{
+                    img{
+                        width: 200px;
+                        height: 270px;
+                    }
+                    
+                }
+                &_2{
+                    img{
+                        width: 200px;
+                        height: 230px;
+                    }
+                }
+            }
+        }
+        &__star{
+            &_2{
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &_1{
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &_3{
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
         }
     }
 }
