@@ -1,0 +1,108 @@
+.task{
+    &-inner{
+        display: flex;
+        align-items: center;
+        max-width: 1272px;
+        margin: 0 auto;
+    }
+
+    &-phone{
+        position: relative;
+        &__phone{
+            z-index: 5;
+        }
+        &__screen{
+            position: absolute;
+            &_1{
+                top: -12%;
+                left: 26%;
+            }
+            &_2{
+                top: 30%;
+                left: 22%;
+            }
+        }
+        &__blur{
+            z-index: -1;
+            position: absolute;
+            top: 10%;
+            left: 0%;
+        }
+        
+    }
+    &__content{
+        margin-left: 220px;
+        margin-bottom: 200px;
+    }
+
+    &__title{
+        font-family: Gotham-black;
+        font-weight: 900;
+        font-size: 45px;
+        line-height: 130%;
+        color: #2c2c2c;
+        margin-bottom: 32px;
+    }
+    &__text{
+        font-family: Gotham-light;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        max-width: 450px
+    }
+
+    &__star{
+        &_1{
+            position: absolute;
+            top: 10%;
+            left: 100%;
+        }
+        &_2{
+            position: absolute;
+            top: 75%;
+            left: 190%;
+            svg{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &_3{
+            position: absolute;
+            top: 110%;
+            left: 65%;
+        }
+        &_4{
+            svg{
+                width: 30px;
+                height: 30px;
+            }
+            position: absolute;
+            top: 140%;
+            left: 150%;
+        }
+    }
+
+}
+
+@media (max-width: 1352px) {
+    .task{
+        &-inner{
+            max-width: 642px;
+            flex-direction: column;
+        }
+        &__phone{
+            order: 1;
+        }
+        &__content{
+            align-self: flex-start;
+            margin: 0;
+            order: -1;
+        }
+        &__title{
+            font-size: 36px;
+        }
+        &__text{
+            max-width: 560px;
+        }
+    }
+}
