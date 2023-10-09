@@ -12,13 +12,12 @@
 
 @font-face {
   font-family: "Gotham-light";
-  font-weight: light;
+  font-weight: 400;
   src: url("../../fonts/gotham-pro/GothamPro-Light.woff2");
 }
 
 @font-face {
   font-family: "Gotham-bold";
-  font-weight: bold;
   src: url("../../fonts/gotham-pro/GothamPro-Bold.woff2");
 }
 
@@ -32,4 +31,9 @@
   font-family: "Gotham-black";
   font-weight: black;
   src: url("../../fonts/gotham-pro/GothamPro-Black.woff2");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../fonts/gotham-pro/GothamPro.woff2");
 }
