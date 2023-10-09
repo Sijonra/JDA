@@ -200,6 +200,7 @@
       max-width: 320px;
     }
     &-image {
+      height: 400px;
       margin-left: 20px;
       &__phone {
         width: 270px;
@@ -244,5 +245,12 @@
         }
       }
     }
+  }
+  .result-border-top{
+    display: none;
+  }
+  .result{
+    padding-top: 40px;
+    padding-bottom: 0;
   }
 }
