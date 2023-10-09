@@ -1,0 +1,52 @@
+###
+1. Preparing
+   1.1. - [JDA-0101] Init Project
+   1.2. - [JDA-0102] Installing libraries, fonts and dependencies
+2. Making Layout and Styles
+   2.1. Section help
+      2.1.1. - [JDA-0201] html/scss layout
+      2.1.2. - [JDA-0202] styles for help/how-service-works sections
+      2.1.3. - [JDA-0203] responsive styles for how-service-works section
+   2.2. Section how service works
+      2.2.1. - [JDA-0301] html/scss layout
+      2.2.2. - [JDA-0302] responsive styles for how-service-works section
+   2.3. Section dev-case
+      2.3.1. - [JDA-0401] html/scss layout
+      2.3.2. - [JDA-0402] responsive styles for section dev-case
+   2.4. Section users questionnaire
+      2.4.1. - [JDA-0501] html/scss layout 
+   2.5. Section todo-screen 
+      2.5.1. - [JDA-0601] html/scss layout 
+   2.6. Section search-filter 
+      2.6.1. - [JDA-0701] html/scss layout 
+   2.7. Section fund-profiles 
+      2.7.1. - [JDA-0801] html/scss layout 
+   2.8. Section QR 
+      2.8.1. - [JDA-0901] html/scss layout 
+   2.9. Section Deeplinks
+      2.9.1. - [JDA-1001] html/scss layout 
+   2.10. Section features
+      2.10.1. - [JDA-1101] html/scss layout  
+   2.11. Section features 
+      2.11.1. - [JDA-1201] html/scss layout 
+   2.12. Section result
+      2.12.1. - [JDA-1301] html/scss layout 
+   2.13. Section contacts
+      2.13.1. - [JDA-1401] html/scss layout 
+3. Testing and Fixing
+   3.1. Testing layout with different browsers
+   3.2. Testing	layout witn different devices
+   3.3. BugFixes 
+4. Release
+   4.1. Making release branch on github
+   4.2. Build project
+   4.2. Publish project on githubPages
+
+
+
+
+
+
+
+
+
