@@ -136,7 +136,7 @@
   }
 
   &__content {
-    padding: 182px 0 150px 800px;
+    padding: 162px 0 150px 760px;
 
     @media (max-width: 1352px) {
       margin: 0 auto;
@@ -148,8 +148,8 @@
   }
 
   &__title {
+    font-family: Gotham-black;
     font-size: 45px;
-    font-weight: 900;
     line-height: 130%;
     margin-bottom: 46px;
     color: #2c2c2c;
@@ -205,6 +205,7 @@
   }
 
   &__item-text {
+    font-family: Gotham;
     font-size: 22px;
     font-weight: 400;
     line-height: 150%;
