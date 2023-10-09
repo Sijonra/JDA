@@ -1,0 +1,248 @@
+.result {
+  padding-bottom: 100px;
+  &-border-top {
+    margin-top: -20px;
+    margin-left: -720px;
+  }
+  position: relative;
+  background-color: #232323;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1272px;
+    margin: 0 auto;
+  }
+  &-image {
+    position: relative;
+    width: 510px;
+    height: 664px;
+    margin-left: 100px;
+    &__phone {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      z-index: 5;
+      img {
+        z-index: 50;
+        width: 510px;
+        height: 664px;
+      }
+    }
+    &__circle {
+      transform: rotate(90deg);
+      z-index: 1;
+      position: absolute;
+      top: 10%;
+      left: -50%;
+    }
+    &__blur {
+      &_1 {
+        z-index: 1;
+        position: absolute;
+        top: 0%;
+        left: -20%;
+      }
+      &_2 {
+        z-index: 1;
+        position: absolute;
+        top: 45%;
+        left: -10%;
+      }
+    }
+    &__star {
+      &_1 {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+        position: absolute;
+        top: 0%;
+        left: 0%;
+      }
+      &_2 {
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+        position: absolute;
+        top: 100%;
+        left: -10%;
+      }
+      &_3 {
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+        position: absolute;
+        top: 80%;
+        left: 85%;
+      }
+      &_4 {
+        svg {
+          width: 80px;
+          height: 80px;
+        }
+        position: absolute;
+        top: 80%;
+        left: 120%;
+      }
+    }
+  }
+  &-content {
+    max-width: 450px;
+  }
+  &__title {
+    font-family: Gotham-bold;
+    font-size: 45px;
+    margin-bottom: 50px;
+    line-height: 130%;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.0088888889em;
+  }
+  &-list {
+    list-style: none;
+    &__item {
+      display: flex;
+      align-items: flex-start;
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+    &__svg {
+      margin-right: 12px;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &__text {
+      margin: 0;
+      margin-top: -4px;
+      font-family: Gotham;
+      font-size: 22px;
+      line-height: 130%;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 1352px) {
+  .result {
+    &-inner {
+      max-width: 768px;
+      flex-direction: column;
+    }
+    &-image {
+      margin: 0 auto;
+      margin-top: 40px;
+      order: 2;
+      width: 435px;
+      height: 570px;
+      img {
+        width: 435px;
+        height: 570px;
+      }
+      &__circle {
+        width: 460px;
+        height: 540px;
+        left: -29%;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__blur {
+        width: 270px;
+        height: 270px;
+        &_1 {
+          top: 40%;
+          left: 40%;
+        }
+        &_2 {
+          left: -10%;
+        }
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__star {
+        &_2 {
+          display: none;
+        }
+        &_4 {
+          display: none;
+        }
+      }
+    }
+    &-content {
+      margin: 0 auto;
+      order: 1;
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &-list {
+      &__text {
+        font-size: 20px;
+        span {
+          font-family: Gotham-bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .result {
+    &-inner {
+      max-width: 320px;
+    }
+    &-image {
+      margin-left: 20px;
+      &__phone {
+        width: 270px;
+        height: 350px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__circle {
+        width: 280px;
+        height: 330px;
+        left: -15%;
+      }
+      &__blur {
+        &_1 {
+          width: 300px;
+          height: 300px;
+          top: -5%;
+          left: -20%;
+        }
+        &_2 {
+          width: 256px;
+          height: 256px;
+          top: 20%;
+          left: 4%;
+        }
+      }
+    }
+    &-content {
+      max-width: 278px;
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+    &-list {
+      &__text {
+        font-size: 16px;
+        span {
+          font-family: Gotham-bold;
+        }
+      }
+    }
+  }
+}
